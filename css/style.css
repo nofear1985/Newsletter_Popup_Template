@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    font-family: 'Work Sans', sans-serif;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/Background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.card {
+    max-width: 26.875rem;
+}
+@media (max-width: 35.9rem) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .card {
+        max-width: 25.875rem;
+    }
+}
+.card .top-box {
+    background-color: hsla(226, 89%, 54%, 1);
+    background-image: url(../images/Pattern.png);
+    height: 12.5625rem;
+    border-radius: 0.625rem 0.625rem 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .top-box .heading {
+    color: #FFFFFF;
+    font-size: 1.625rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 3.5rem 2.75rem 3.4375rem 3.75rem;
+}
+.card .bottom-box {
+    background-color: hsla(0, 0%, 100%, 1);
+    padding: 0 1.5rem;
+    border-radius:0 0 0.625rem 0.625rem;
+}
+.card .bottom-box .paragraph {
+    color: #595959;
+    line-height: 1.36;
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+.card .bottom-box .subscribe {
+    display: flex;
+}
+.card .bottom-box .subscribe input[type=email] {
+    width: 70%;
+    background-color: #F5F7FA;
+    border: 1px solid #E6E8F0;
+    border-radius: 0.3125rem;
+    padding: 0.875rem;
+    outline: none;
+}
+.card .bottom-box .subscribe input[type=email]::placeholder {
+    color: #B3B7C5;
+    font-size: 0.875rem;
+    font-weight: normal;
+}
+.card .bottom-box .subscribe input[type=submit] {
+    width: 30%;
+    background-color: #2355F2;
+    color: #FFFFFF;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-radius: 0.3125rem;
+    outline: none;
+    border: none;
+    margin-left: 0.5rem;
+}
+.card .bottom-box .unsubscribe {
+    padding-top: 1rem;
+    font-size: 0.875rem;
+    font-weight: normal;
+    color: #A6A6A6;
+}
+.card .bottom-box .user {
+    padding-top: 2.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .bottom-box .user .text {
+    margin-left: 0.5rem;
+}
+.card .bottom-box .user .text .name {
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+.card .bottom-box .user .text .title {
+    color: #595959;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+.card .bottom-box .last-paragraph {
+    padding: 1rem 0 1.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.36;
+    color: #595959;
+}
